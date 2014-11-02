@@ -1,0 +1,185 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,500,400);
+
+.collapsable-background {
+    background-image: url(../img/background-image.jpg);
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+
+.collapsable-foreground {
+    background-color: #FFF;
+    width: 1200px;
+    position: relative;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 20px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: olive;
+    font-family: sans-serif;
+    color: white;
+}
+
+.main-article {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.main-article h1 {
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-article .title {
+
+}
+
+.main-article .developer {
+    font-weight: 500;
+    padding-right: 20px;
+    background-image: url(../img/icon-developer.webp);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 3px;
+    display: inline;
+}
+
+.main-article .installation {
+    text-align: right;
+}
+
+.main-article .install-button {
+    text-transform: uppercase;
+    display: inline;
+    padding: 5px 25px 5px 25px;
+    background-color: olive;
+    color: white;
+    cursor: pointer;
+}
+
+.main-article .install-button:hover {
+    background-color: green;
+}
+
+.main-article .price-addend {
+    font-size: 12px;
+}
+
+.main-article .image-cover {
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+.main-article .title .title-img {
+    position: relative;
+    margin: auto;
+}
+
+.main-article .title .title-top {
+    display: inline-block;
+    float: left;
+    width: 70%;
+}
+
+.main-article .title .score-board {
+    display: inline-block;
+    float: left;
+    width: 70%;
+}
+
+.main-article section {
+    border-bottom: solid 1px #DDD;
+    position: relative;
+}
+
+.main-article .description-collapser-button {
+    text-transform: uppercase;
+    color: olive;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+
+#description-text > *:not(:first-child) {
+    display:none;
+}
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .carousel {
+    overflow: hidden;
+    width: 200%;
+    padding-left: 60px;
+}
+
+.gallery .carousel li {
+    display:inline;
+    padding: 0;
+    margin: 10px;
+    
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    
+}
+
+.gallery .carousel li a {
+    text-decoration: none;
+}
+
+
+.gallery .carousel li img {
+    margin: 0;
+    height:310px;
+    width:174px;
+}
+
+.carousel-prevbutton {
+    vertical-align: middle;
+    color: gray;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 330px;
+    left: 0;
+    top: 0;    
+}
+
+.carousel-nextbutton {
+    vertical-align: middle;
+    color: gray;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 330px;
+    right: 0;
+    top: 0;
+}
+
+.carousel-prevbutton > img, .carousel-nextbutton > img {
+    top: 112px;
+    position: relative;
+    opacity: .5;
+}
+
+.carousel-prevbutton > img:hover, .carousel-nextbutton > img:hover {
+    opacity: 1;
+}
