@@ -1,0 +1,2 @@
+Just a demo for some Javascript techniques like fating top menu bar, carousel of pictures and collapsable background, all in the flavor of Google Play for Android replicated in HTML.
+See it [here](https://cdn.rawgit.com/abelta/GooglePlayLike/master/index.html).
