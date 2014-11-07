@@ -6,16 +6,13 @@
   CollapsableText = (function() {
     function CollapsableText(dom) {
       this.dom = dom;
-      console.log('CollapsableText', this.dom);
     }
 
     CollapsableText.prototype.show = function() {
-      console.log('CollapsableText#show');
       return jQuery(this.dom).children().show();
     };
 
     CollapsableText.prototype.hide = function() {
-      console.log('CollapsableText#hide');
       return jQuery(this.dom).children().not(':first-child').hide();
     };
 
@@ -28,7 +25,6 @@
       this.dom = dom;
       this.collapsableText = collapsableText;
       this.clickHandler = __bind(this.clickHandler, this);
-      console.log('CollapseButton', this.dom, this.collapsableText);
       this.showMoreCaption = jQuery(this.dom).text();
       this.showLessCaption = jQuery(this.dom).data('collapse-less-caption');
       this.open = false;
@@ -36,18 +32,11 @@
     }
 
     CollapseButton.prototype.clickHandler = function() {
-      console.log('CollapseButton#clickHandler');
       if (this.open) {
-        console.log('open');
-        console.log('@dom', this.dom);
-        console.log('@showMoreCaption', this.showMoreCaption);
         jQuery(this.dom).text(this.showMoreCaption);
         this.collapsableText.hide();
         return this.open = false;
       } else {
-        console.log('close');
-        console.log('@dom', this.dom);
-        console.log('@showLessCaption', this.showLessCaption);
         jQuery(this.dom).text(this.showLessCaption);
         this.collapsableText.show();
         return this.open = true;

@@ -16,38 +16,37 @@
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/modernizr-2.6.2.min.js"></script>
     </head>
-    <body class="collapsable-background">
+
+
+    <body class="background">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="nav-bar">
+        <nav class="nav-bar" data-scroll-fader>
             <span>Spider-Man Unlimited</span>
         </nav>
 
-        <div class="main-article collapsable-foreground">
-            
+        <div class="header-background" data-collapsable-background>
+        </div>
+
+        <div class="main-article" data-collapsable-foreground>
             <header class="title clearfix">
                 
-            <div class="image-cover">
-                <img class="title-img" src="img/title-image.webp" height="300" width="300" />
-            </div>
-
-            <section class="title-top section">
-                <h1>Spider-Man Unlimited</h1>
-                <div class="developer">Gameloft</div>
-                <div class="installation">
-                    <a class="install-button">Install</a>
-                    <p class="price-addend">In-app purchases</p>
+                <div class="image-cover">
+                    <img class="title-img" src="img/title-image.webp" height="300" width="300" />
                 </div>
-            </section>
 
-            <!--
-            <section class="score-board">
-                <span>Real nice</span>
-            </section>
-            -->
+                <section class="title-top section">
+                    <h1>Spider-Man Unlimited</h1>
+                    <div class="developer">Gameloft</div>
+                    <div class="installation">
+                        <a class="install-button">Install</a>
+                        <p class="price-addend">In-app purchases</p>
+                    </div>
+                </section>
             </header>
+
 
             <section class="gallery">
                 <nav class="carousel">
@@ -127,16 +126,102 @@
                 <a class="description-collapser-button" data-collapse-less-caption="Read less" data-collapse="description-text" data-collapse-closed>Read more</a>
             </section>
             
+            <section class="comments clearfix">
+                <h2>Reviews</h2>
+
+                <article class="comment">
+                    <div class="comment-left">
+                        <img class="icon-reviewer" src="img/icon-reviewer.jpg" />
+                    </div>
+                    <div class="comment-content">
+                        <header>
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-stars"><span class="review-stars-3"></span></span>
+                            <span class="review-date">November 3, 2014</span>
+                        </header>
+                        <div class="comment-text">
+                        Last update Ever since i updated this game it constantly closes and i had a lot of gems but now it is saying that i only have 1. Please fix, it's a great game and i don't want to delete it
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-left">
+                        <img class="icon-reviewer" src="img/icon-reviewer.jpg" />
+                    </div>
+                    <div class="comment-content">
+                        <header>
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-stars"><span class="review-stars-0"></span></span>
+                            <span class="review-date">November 3, 2014</span>
+                        </header>
+                        <div class="comment-text">
+                        Last update Ever since i updated this game it constantly closes and i had a lot of gems but now it is saying that i only have 1. Please fix, it's a great game and i don't want to delete it
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-left">
+                        <img class="icon-reviewer" src="img/icon-reviewer.jpg" />
+                    </div>
+                    <div class="comment-content">
+                        <header>
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-stars"><span class="review-stars-1"></span></span>
+                            <span class="review-date">November 3, 2014</span>
+                        </header>
+                        <div class="comment-text">
+                        Last update Ever since i updated this game it constantly closes and i had a lot of gems but now it is saying that i only have 1. Please fix, it's a great game and i don't want to delete it
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-left">
+                        <img class="icon-reviewer" src="img/icon-reviewer.jpg" />
+                    </div>
+                    <div class="comment-content">
+                        <header>
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-stars"><span class="review-stars-3"></span></span>
+                            <span class="review-date">November 3, 2014</span>
+                        </header>
+                        <div class="comment-text">
+                        Last update Ever since i updated this game it constantly closes and i had a lot of gems but now it is saying that i only have 1. Please fix, it's a great game and i don't want to delete it
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comment">
+                    <div class="comment-left">
+                        <img class="icon-reviewer" src="img/icon-reviewer.jpg" />
+                    </div>
+                    <div class="comment-content">
+                        <header>
+                            <span class="reviewer-name">John Doe</span>
+                            <span class="review-stars"><span class="review-stars-3"></span></span>
+                            <span class="review-date">November 3, 2014</span>
+                        </header>
+                        <div class="comment-text">
+                        Last update Ever since i updated this game it constantly closes and i had a lot of gems but now it is saying that i only have 1. Please fix, it's a great game and i don't want to delete it
+                        </div>
+                    </div>
+                </article>
+
+
+            </section>
         </div>
         
         
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/scroll-collapse.js"></script>
         <script src="js/description-collapser.js"></script>
         <script src="js/thumbnail-carousel.js"></script>
+        <script src="js/scroll-fader.js"></script>
         <script src="js/main.js"></script>
 
-        
     </body>
 </html>

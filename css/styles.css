@@ -1,23 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,500,400);
 
-.collapsable-background {
-    background-image: url(../img/background-image.jpg);
-    background-color: #EEE;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center top;
+.background {
+    
 }
 
-.collapsable-foreground {
-    background-color: #FFF;
-    width: 1200px;
-    position: relative;
-    top: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    padding: 20px;
-}
 
 .nav-bar {
     position: fixed;
@@ -27,13 +13,40 @@
     background-color: olive;
     font-family: sans-serif;
     color: white;
+    z-index: 100;
+    opacity: 0;
+    transition: .05s;
+}
+
+.nav-bar span {
+    opacity: 1 !important;
+}
+
+.header-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 540px;
+    background-image: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(0,0,0,.5) 0%, rgba(254,254,254,0) 200px), url(../img/background-image.jpg);
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.1s;
 }
 
 .main-article {
+    background-color: #FFF;
+    width: 1200px;
+    position: relative;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
     color: gray;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
+    transition: 0.1s;
 }
 
 .main-article h1 {
@@ -103,6 +116,7 @@
 .main-article section {
     border-bottom: solid 1px #DDD;
     position: relative;
+    padding-bottom: 200px;
 }
 
 .main-article .description-collapser-button {
@@ -132,11 +146,7 @@
     display:inline;
     padding: 0;
     margin: 10px;
-    
-    -webkit-transition: width 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
-    
 }
 
 .gallery .carousel li a {
@@ -182,4 +192,101 @@
 
 .carousel-prevbutton > img:hover, .carousel-nextbutton > img:hover {
     opacity: 1;
+}
+
+.comments {
+
+}
+
+.comment {
+    position: relative;
+    display: block;
+    width: 340px;
+    float: left;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.comment h2 {
+    font-weight: 300;
+}
+
+.comment .comment-left {
+    float: left;
+    width: 60px;
+    height: 100%;
+}
+
+.comment .icon-reviewer {
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    float: left;
+}
+
+.comment .comment-content {
+    float:right;
+    width: auto;
+    width: 270px;
+}
+
+.comment .reviewer-name {
+    font-weight: bold;
+}
+
+.comment .review-date {
+    font-size: 12px;
+}
+
+.comment .review-stars {
+    display: block;
+    height: 14px;
+    width: 70px;
+    background: url(../img/icon-star-light.png);
+}
+
+.comment .review-stars-0 {
+    display: block;
+    height: inherit;
+    width: 0;
+    background: url(../img/icon-star-dark.png);
+}
+
+.comment .review-stars-1 {
+    display: block;
+    height: inherit;
+    width: 14px;
+    background: url(../img/icon-star-dark.png);
+}
+
+.comment .review-stars-2 {
+    display: block;
+    height: inherit;
+    width: 28px;
+    background: url(../img/icon-star-dark.png);
+}
+
+.comment .review-stars-3 {
+    display: block;
+    height: inherit;
+    width: 42px;
+    background: url(../img/icon-star-dark.png);
+}
+
+.comment .review-stars-4 {
+    display: block;
+    height: inherit;
+    width: 56px;
+    background: url(../img/icon-star-dark.png);
+}
+
+.comment .review-stars-5 {
+    display: block;
+    height: inherit;
+    width: 70px;
+    background: url(../img/icon-star-dark.png);
+}
+
+.comment .comment-text {
+
 }
